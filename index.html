@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photo Frame App</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
     <div class="container">
         <h1>Photo Frame App</h1>
         <input type="file" accept="images/*" id="photo-input" capture="environment">
-        <div class="frames">
+        <div class="frames-container">
             <h2>Choose a Frame</h2>
-            <div class="frame" id="frame1"><img src="frames/user_image_frame_1.png" alt="Frame 1"></div>
-            <div class="frame" id="frame2"><img src="frames/user_image_frame_2.png" alt="Frame 2"></div>
-            <div class="frame" id="frame3"><img src="frames/user_image_frame_3.png" alt="Frame 3"></div>
-            <div class="frame" id="frame4"><img src="frames/user_image_frame_4.png" alt="Frame 4"></div>
+            <div class="frames">
+                <div class="frame" id="frame1"><img src="frames/user_image_frame_1.png" alt="Frame 1"></div>
+                <div class="frame" id="frame2"><img src="frames/user_image_frame_2.png" alt="Frame 2"></div>
+                <div class="frame" id="frame3"><img src="frames/user_image_frame_3.png" alt="Frame 3"></div>
+                <div class="frame" id="frame4"><img src="frames/user_image_frame_4.png" alt="Frame 4"></div>
+            </div>
         </div>
-        <div class="photo-area">
-            <img id="photo" src="" alt="Your Photo">
-            <img id="frame-overlay" src="" alt="Frame Overlay" class="hidden">
+        <!-- <div class="photo-container">
+            <div class="photo-area">
+                <img id="photo" src="" alt="Your Photo">
+                <img id="frame-overlay" src="" alt="Frame Overlay" class="hidden">
+            </div>
+        </div> -->
+        <div class ="el">
+            <!--<img src="./images/flower_image1.jpg" alt="Frame 4">-->
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
+
 </html>
